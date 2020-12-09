@@ -1,0 +1,16 @@
+<DOCTYPE html>
+    <html>
+        <body>
+            <p>Click the button to demostrate the prompt box.</p>
+            <button onclick="myHomeWork()">Try it</button>
+            <p id = "demo"></p>
+            <script>
+                function myHomeWork(){
+                    var person = prompt("Please enter your name", "Harry Potter");
+                    if(person != null){
+                        document.getElementById("demo").innerHTML = "Hello " + person + "! How are you tuday?";
+                    }
+                }
+            </script>
+        </body>
+    </html>
